@@ -1,9 +1,13 @@
 import React from 'react'
+import loader from "@/assets/loader.gif"
+import Image from 'next/image'
 
-const loading = () => {
+const LoadingPage = () => {
     return (
-        <div>loading</div>
+        <div className='flex justify-center items-center h-screen w-screen'>
+            <Image src={loader} alt="Loading..." height={32} width={32} />
+        </div>
     )
 }
 
-export default loading
+export default LoadingPage

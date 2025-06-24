@@ -7,11 +7,11 @@ const Homepage = async () => {
 
     return (
         <>
-            <ProductList 
+            {/* <ProductList 
                 data={latestProducts.products}
                 title="new arrivals"
                 limit={4}
-            />
+            /> */}
         </>
     )
 }
