@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SERVER_URL)
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -36,9 +36,9 @@ export default function RootLayout({
           suppressHydrationWarning
           className={` ${inter.className} antialiased`}
         >
-          <Header />
+          {/* <Header /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </body>
       </html>
     </ThemeProvider>
